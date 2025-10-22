@@ -106,7 +106,7 @@ var WangTile = ( function()
         }
         else
         {
-            //case 3: match both both the top and the left tiles
+            //case 3: match both the top and the left tiles
             for( var i = 0; i< ids.length; i++ )
             {
 
@@ -179,12 +179,10 @@ var WangTile = ( function()
 
 }( ) );
 
-//test
-var canvas = document.createElement( 'canvas' );
-var w = canvas.width =  window.innerWidth;
+var canvas = document.getElementById('canvas');
+var w = canvas.width = window.innerWidth;
 var h = canvas.height = window.innerHeight;
 var ctx = canvas.getContext("2d");
-document.body.appendChild( canvas );
 
 function reset()
 {
