@@ -21,19 +21,20 @@ body {
 }
 
 main#carousel {
-    margin-top: 60px;
-    width: 100vw;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: visible;
-    transform-style: preserve-3d;
-    perspective: 600px;
-    --position: 1;
-    pointer-events: none;
-    position: relative;
-    z-index: 5;
+  position: fixed; 
+  bottom: -200px; 
+  left: 0;
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  --position: 1;
+  pointer-events: none;
+  z-index: 5;
 }
 
 div.item {
@@ -44,7 +45,8 @@ div.item {
     --abs: max(calc(var(--r) * -1), var(--r));
     transition: transform 0.8s ease-in-out;
     transform: rotateY(calc(-10deg * var(--r)))
-        translateX(calc(-30vmin * var(--r)));
+            rotateZ(calc( -4deg * var(--r)))
+            translateX(calc(-30vmin * var(--r)));
     z-index: calc((var(--position) - var(--abs)));
     display: flex;
     align-items: center;
@@ -54,6 +56,18 @@ div.item {
     font-weight: bold;
     border-radius: 12px;
     cursor: pointer;
+}
+
+img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 2;
+    box-shadow: 0 8px 15px 3px rgba(0,0,0,0.3);
 }
 
 div.item:nth-of-type(1) { --offset: 1; background-color: #f7b267;}
