@@ -502,3 +502,8 @@ label {
   padding: 0;
   border-radius: 0;
 }
+
+.wrap-img {
+  float: left;
+  height: auto;
+}
