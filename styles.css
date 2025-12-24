@@ -453,17 +453,20 @@ label {
 }
 
 .subchalkboard {
-  margin-top: 11vh;
-  margin-left: 44vw;
-  width: 42vw;
-  height: 42vh;
+  margin-top: 7vh;
+  margin-left: 42vw;
+  width: 50vw;
+  height: 45vh;
   position: absolute;
-  background: #210551;
-  color: white;
+  background: #a18ecc;
+  border-color: #210551;
+  border-style: solid;
+  border-width: thick;
+  color: #210551;
   overflow: hidden;
   overflow-x: auto;
   border-radius: 3vh;
-  scrollbar-color: rgba(255, 255, 255, 0.15) #210551;
+  scrollbar-color: rgba(255, 255, 255, 0.15) #7b65af;
   z-index: 3;
   padding: 5px;
   scroll-padding: 10px;
@@ -471,13 +474,16 @@ label {
 
 .subchalkboardheader {
   padding: 1vw;
-  background: rgba(255, 255, 255, 0.15);
+  /* #422a6b*/
+  /*7b65af*/
+  background: #422a6b;
   pointer-events: all;
   border-radius: 3vh 3vh 0vh 0vh;
   padding-right: 20px;
   background-clip: padding-box;
   font-family: "Offside", sans-serif;
   z-index: 3;
+  color: white;
 }
 
 .subchalkboard .content {
